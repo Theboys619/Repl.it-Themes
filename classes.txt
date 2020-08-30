@@ -1,0 +1,8 @@
+#### CLASSES FOR REPL.IT ####
+
+
+file-tree               File tree
+side-nav                Side navigation
+file-header-tab         File Tabs
+file-header-name        File headers
+sidebar-layout-header   Nav bar header

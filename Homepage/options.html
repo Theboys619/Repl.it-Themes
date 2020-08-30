@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repl.it Themes</title>
+  <link rel="stylesheet" href="./css/master.css" type="text/css" />
+  <script src="/tmTheme.js" async defer></script>
+  <script src="./libs/monaco/vs/loader.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="title">Repl.it Theming</div>
+    </nav>
+  </header>
+  <main>
+    <div id="settings">
+      <div id="selectTheme">
+        <h2>Select a Theme:</h2>
+        <label for="theme">Selected Theme</label>
+        <select name="themes" id="themes" required>
+          <option value="" disabled selected>Select a Theme</option>
+        </select>
+      </div>
+      <div id="createTheme">
+        <h2>Create a Theme:</h2>
+        <div class="sidebside">
+          <div id="editor"></div>
+        </div>
+        <button type="button" id="saveThemeBtn" class="btn">Save Theme</button>
+        <button type="button" id="getCurrentTheme" class="btn">Use Current Theme Scheme</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/script.js" async defer></script>
+  <script src="./js/jsonSchemas.js" async defer></script>
+  <script src="./js/editor.js" async defer></script>
+</body>
+</html>

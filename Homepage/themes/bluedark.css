@@ -1,0 +1,19 @@
+body {
+  background-color: #1565c0;
+  color: whitesmoke !important;
+}
+
+input {
+  margin-top: 14px !important;
+  background-color: #0d47a1 !important;
+  color: white !important;
+  padding: 0 5px 3px 5px !important;
+
+  border-color: transparent !important;
+  border-radius: 24px !important;
+  border-style: solid !important;
+}
+
+label {
+  color: white !important;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Repl.it Theming",
+  "description" : "Allows you to create custom themes, or create custom languages for Repl.it",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["*://*.repl.it/*"],
+      "run_at": "document_end",
+      "js": ["tmTheme.js", "main.js"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "https://repl.it/@Theboys619/CLang"
+  ],
+  "web_accessible_resources": ["Homepage/*", "Themes/*", "TMThemes/*", "scripts/*"],
+  "options_page": "./Homepage/options.html",
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js; object-src 'self'"
+}

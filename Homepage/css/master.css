@@ -1,0 +1,50 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(28, 33, 36);
+  color: whitesmoke;
+}
+
+header nav {
+  display: flex;
+  height: 64px;
+
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+main {
+  padding: 15px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn {
+  margin-top: 5px;
+  padding: 10px;
+  
+  transition: all ease-in 150ms;
+
+  border: solid transparent 1px;
+  border-radius: 2px;
+
+  background-color: rgba(131, 126, 126, 0.863);
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(109, 104, 104, 0.952);
+}
+
+#editor {
+  height: 400px;
+  width: 600px;
+}

@@ -1,0 +1,30 @@
+{
+  "themeRoot": "TMThemes",
+  "themes": {
+    "Active4D": "/VSCode/Active4D.tmTheme",
+    "All Hallow's Eve": "/VSCode/All Hallow's Eve.tmTheme",
+    "Amy": "/VSCode/Amy.tmTheme",
+    "Blackboard": "/VSCode/Blackboard.tmTheme",
+    "Cobalt": "/VSCode/Cobalt.tmTheme",
+    "Dawn": "/VSCode/Dawn.tmTheme",
+    "Eiffel": "/VSCode/Eiffel.tmTheme",
+    "Espresso Libre": "/VSCode/Espresso Libre.tmTheme",
+    "Github": "/VSCode/Github.tmTheme",
+    "IDLE": "/VSCode/IDLE.tmTheme",
+    "iPlastic": "/VSCode/iPlastic.tmTheme",
+    "LAZY": "/VSCode/LAZY.tmTheme",
+    "Mac Classic": "/VSCode/Mac Classic.tmTheme",
+    "MagicWB Amiga": "/VSCode/MagicWB (Amiga).tmTheme",
+    "Monokai Bright": "/VSCode/Monokai Bright.tmTheme",
+    "Monokai": "/VSCode/Monokai.tmTheme",
+    "Pastels on Dark": "/VSCode/Pastels on Dark.tmTheme",
+    "Railscasts": "/VSCode/Railscasts.tmTheme",
+    "Slush & Poppies": "/VSCode/Slush & Poppies.tmTheme",
+    "Solarized Dark": "/VSCode/Solarized (Dark).tmTheme",
+    "Solarized Light": "/VSCode/Solarized (Light).tmTheme",
+    "SpaceCadet": "/VSCode/SpaceCadet.tmTheme",
+    "Sunburst": "/VSCode/Sunburst.tmTheme",
+    "Twilight": "/VSCode/Twilight.tmTheme",
+    "Zenburnesque": "/VSCode/Zenburnesque.tmTheme"
+  }
+}
