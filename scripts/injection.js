@@ -126,10 +126,10 @@ defineThemes();
 
 // Event Listeners //
 
-document.getElementsByClassName(FILETREE)[0].addEventListener("DOMNodeInserted", (e) => {
+document.getElementsByClassName(FILETABS)[0].addEventListener("DOMNodeInserted", (e) => {
   const newTab = e.path[0];
 
-  if (currentTheme) return;
+  if (!currentTheme || !newTab.style || !currentTheme.colors) return;
 
   newTab.style.backgroundColor = currentTheme.colors["editor.background"];
   newTab.style.color = currentTheme.colors["editor.foreground"];
