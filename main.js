@@ -25,7 +25,7 @@ async function fetchThemes() {
     try {
       definedThemes[themeName] = MonacoThemes.parseTmTheme(themetext);      
     } catch (err) {
-      alert(`There was a problem loading theme ${themeName}! Please check the console for details!`);
+      // alert(`There was a problem loading theme ${themeName}! Please check the console for details!`);
       console.error(`Failed loading theme ${themeName}! Error below:`);
       console.error(err);
     }
@@ -42,14 +42,18 @@ async function main() {
   const themeStr = JSON.stringify(definedThemes, null, 2);
   let selectedTheme = "NONE";
 
+  const { origin, pathname } = window.location;
+
   chrome.storage.sync.get((data) => {
     if (data.SelectedTheme) {
       selectedTheme = data.SelectedTheme;
     }
 
-    if (window.location.origin.includes("repl.it")) {
+    if (origin.includes("repl.it") && pathname.match(/@[$\\\#a-zA-Z0-9\-]\//)) {
       injectScript(null, `const themes = ${themeStr};`, `let customThemes = ${JSON.stringify(customThemes, null, 2)};`, `let selectedTheme = '${selectedTheme}';`);
       injectScript("injection.js");
+    } else {
+      document.body.focus();
     }
   });
 }
