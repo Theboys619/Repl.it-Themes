@@ -49,7 +49,7 @@ async function main() {
       selectedTheme = data.SelectedTheme;
     }
 
-    if (origin.includes("repl.it") && pathname.match(/@[$\\\#a-zA-Z0-9\-]\//)) {
+    if (origin.includes("repl.it") && pathname.match(/@[$\\\#a-zA-Z0-9\-]+\//)) {
       injectScript(null, `const themes = ${themeStr};`, `let customThemes = ${JSON.stringify(customThemes, null, 2)};`, `let selectedTheme = '${selectedTheme}';`);
       injectScript("injection.js");
     } else {
